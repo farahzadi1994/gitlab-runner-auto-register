@@ -15,5 +15,5 @@ This project helps you automatically deploy **GitLab CE** and **GitLab Runner** 
 ### 2. Clone the repository
 
 ```bash
-git clone https://your-repository-link.git
+git clone https://github.com/farahzadi1994/gitlab-runner-auto-register.git
 cd gitlab-runner-auto-register
