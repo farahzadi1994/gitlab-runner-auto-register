@@ -2,7 +2,7 @@
 set -e
 
 echo "🚀 Starting GitLab and GitLab Runner..."
-docker-compose up -d
+docker compose up -d
 
 echo "⏳ Waiting for GitLab to be ready..."
 until curl -s http://localhost:8080/users/sign_in > /dev/null; do
