@@ -45,7 +45,7 @@ gitlab-runner-auto-register/
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/gitlab-runner-auto-register.git
+git clone https://github.com/farahzadi1994/gitlab-runner-auto-register.git
 cd gitlab-runner-auto-register
 ```
 
