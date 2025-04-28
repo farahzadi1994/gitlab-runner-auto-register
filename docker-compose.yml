@@ -1,4 +1,4 @@
-version: '3.6'
+version: '3.8'
 
 services:
   gitlab:
@@ -28,13 +28,3 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - ./runner/config:/etc/gitlab-runner
-    entrypoint: ["/bin/bash", "-c"]
-    command:
-      - >
-        sleep 60 && bash /scripts/register_runner.sh
-    networks:
-      - default
-
-networks:
-  default:
-    driver: bridge
