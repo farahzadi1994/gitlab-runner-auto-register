@@ -15,9 +15,9 @@ services:
       - '8443:443'
       - '2222:22'
     volumes:
-      - ./gitlab/config:/etc/gitlab
-      - ./gitlab/logs:/var/log/gitlab
-      - ./gitlab/data:/var/opt/gitlab
+      - /etc/gitlab/config:/etc/gitlab
+      - /etc/gitlab/logs:/var/log/gitlab
+      - /etc/gitlab/data:/var/opt/gitlab
 
   gitlab-runner:
     image: gitlab/gitlab-runner:latest
@@ -27,4 +27,4 @@ services:
       - gitlab
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - ./runner/config:/etc/gitlab-runner
+      - /etc/gitlab/runner/config:/etc/gitlab-runner
