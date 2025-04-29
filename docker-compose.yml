@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   gitlab:
-    image: gitlab/gitlab-ce:latest
+    image: docker.arvancloud.ir/gitlab/gitlab-ce:latest
     container_name: gitlab
     restart: always
     hostname: 'gitlab'
@@ -20,7 +20,7 @@ services:
       - /etc/gitlab/data:/var/opt/gitlab
 
   gitlab-runner:
-    image: gitlab/gitlab-runner:latest
+    image: docker.arvancloud.ir/gitlab/gitlab-runner:latest
     container_name: gitlab-runner
     restart: always
     depends_on:
