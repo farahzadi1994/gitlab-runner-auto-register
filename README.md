@@ -79,7 +79,7 @@ bash scripts/get_runner_token.sh
 
 ## 📜 License
 
-This project is licensed under the **MIT License**.
+This project is licensed under the **GPL v3 License**.
 
 ---
 
