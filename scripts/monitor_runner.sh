@@ -2,7 +2,7 @@
 set -e
 
 echo "🔍 Verifying runner registration in GitLab..."
-
+sleep 20
 RUNNERS=$(curl --silent --header "PRIVATE-TOKEN: SuperSecretPATToken123" \
   "http://localhost:8080/api/v4/runners/all")
 
